@@ -6,6 +6,7 @@
 package hospital.Person;
 
 import hospital.Tranactions.Operation;
+import java.rmi.RemoteException;
 
 /**
  *
@@ -27,6 +28,7 @@ public class Doctor extends Person{
         this.patient = patient;
         this.operation = operation;
     }
+
 
     public String getSpecialziation() {
         return Specialziation;
