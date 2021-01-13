@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package hospital.Person;
-import hospital.DBConnection;
 import hospital.Tranactions.Medical_Insurance;
 import hospital.Person.*;
 
@@ -25,7 +24,6 @@ public class Patient {
     private Medical_Insurance insurance;
     private String MedicalCondition;
     
-    DBConnection db = new DBConnection();
 
     public Patient() {
     }
@@ -100,7 +98,6 @@ public class Patient {
     
     
     
-    //******************** Functions **********************
 
     
 }

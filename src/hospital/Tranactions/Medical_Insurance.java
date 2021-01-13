@@ -5,7 +5,6 @@
  */
 package hospital.Tranactions;
 
-import hospital.DBConnection;
 import hospital.Person.Patient;
 
 /**
@@ -18,7 +17,7 @@ public class Medical_Insurance {
     private boolean Status;
     private String Type;
     private float cost;
-    DBConnection db = new DBConnection();
+    
 
     public Medical_Insurance() {
     }
