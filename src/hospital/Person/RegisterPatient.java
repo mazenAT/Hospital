@@ -180,7 +180,7 @@ public class RegisterPatient extends javax.swing.JFrame {
          String Admission = jTextField11.getText();
          Patient P = new Patient(blood,name,phone,age,gender,condition);
          try{
-            Registry R = LocateRegistry.getRegistry(1066);
+            Registry R = LocateRegistry.getRegistry(1010);
             ReceptionistManager r = (ReceptionistManager) R.lookup("rece");
             r.registerPateint(P, Admission);
         }
