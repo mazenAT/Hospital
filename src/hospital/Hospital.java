@@ -5,9 +5,14 @@
  */
 package hospital;
 
+
 import hospital.Person.Doctor;
 import hospital.Person.Person;
 import hospital.Person.PersonInterface;
+import hospital.Person.Reception;
+import hospital.Person.ReceptionistManager;
+import java.rmi.RemoteException;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
@@ -22,7 +27,8 @@ public class Hospital {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        try{
+
+        /*try{
         Registry registry = LocateRegistry.getRegistry(1260);
         
         PersonInterface p = (PersonInterface) registry.lookup("person");
@@ -35,7 +41,9 @@ public class Hospital {
       System.out.print("Client Is Ready");
         }catch(Exception ex){
             System.out.print(ex);
-        }
+        }*/
+        Reception R =new Reception();
+        R.setVisible(true);
     }
     
 }
