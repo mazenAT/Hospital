@@ -5,6 +5,12 @@
  */
 package hospital;
 
+import hospital.Person.Reception;
+import hospital.Person.ReceptionistManager;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
 /**
  *
  * @author mazen
@@ -16,6 +22,8 @@ public class Hospital {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Reception R =new Reception();
+        R.setVisible(true);
     }
     
 }

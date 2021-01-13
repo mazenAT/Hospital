@@ -79,6 +79,7 @@ public class Reception extends javax.swing.JFrame {
         // TODO add your handling code here:
         RegisterPatient R = new RegisterPatient();
         R.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
