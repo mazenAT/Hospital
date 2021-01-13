@@ -5,7 +5,6 @@
  */
 package hospital.Tranactions;
 
-import hospital.Person.Patient;
 import java.io.Serializable;
 
 /**
