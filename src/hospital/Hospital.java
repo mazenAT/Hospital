@@ -23,16 +23,18 @@ public class Hospital {
     public static void main(String[] args) {
         // TODO code application logic here
         try{
-        Registry registry = LocateRegistry.getRegistry(1099);
+        Registry registry = LocateRegistry.getRegistry(1260);
         
         PersonInterface p = (PersonInterface) registry.lookup("person");
         
-        Person m = new Doctor("Neurologist","Neuro-dept","day",null,null,"Mohamed","mohamed@mohamed.com","01000214546",30,"Male","helwan","Doctor",12500);
+       Person m = new Doctor("Neurologist","Neuro-dept","day",null,null,"Mohamed","mohamed@mohamed.com","01000214546",30,"Male","helwan","Doctor",12500);
         p.RegisterP(m);
-        p.GetP(m);
-        System.out.print(p.toString());
+      //  p.GetP(m);
+      
+       // System.out.print(m.toString());
+      System.out.print("Client Is Ready");
         }catch(Exception ex){
-            System.out.print("Exception Occured");
+            System.out.print(ex);
         }
     }
     

@@ -6,6 +6,7 @@
 package hospital.Person;
 
 import hospital.Tranactions.Operation;
+import java.io.Serializable;
 import java.rmi.RemoteException;
 
 /**
@@ -13,14 +14,14 @@ import java.rmi.RemoteException;
  * @author Ezzat
  */
 
-public class Doctor extends Person{
+public class Doctor extends Person implements Serializable{
     private String Specialziation;
     private String Department;
     private String shift;
     private Patient[] patient;
     private Operation operation;
 
-    public Doctor(String Specialziation, String Department, String shift, Patient[] patient, Operation operation, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
+    public Doctor(String Specialziation, String Department, String shift, Patient[] patient, Operation operation, String name, String email, String phone, int age, String gender, String address, String role, float salary) throws RemoteException {
         super(name, email, phone, age, gender, address, role, salary);
         this.Specialziation = Specialziation;
         this.Department = Department;
@@ -28,7 +29,6 @@ public class Doctor extends Person{
         this.patient = patient;
         this.operation = operation;
     }
-
 
     public String getSpecialziation() {
         return Specialziation;
@@ -79,6 +79,13 @@ public class Doctor extends Person{
     
     
     // functions here
+    
+    public Operation CheckOperation(){
+        return operation;
+    }
+    public  Patient[] CheckPatients(){
+        return patient;
+    }
     
     public void Update(){
         
