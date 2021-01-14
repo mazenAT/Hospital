@@ -15,6 +15,9 @@ public class LaboratoryTest {
     private float testPrice;
     private String PateintName;
 
+    public LaboratoryTest() {
+    }
+
     public LaboratoryTest(String TestType, String ChemistName, float testPrice, String PateintName) {
         this.TestType = TestType;
         this.ChemistName = ChemistName;

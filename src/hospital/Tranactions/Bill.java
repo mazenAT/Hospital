@@ -18,6 +18,9 @@ public class Bill {
     private float TotalMoney;
     private Bill BillDetails;
 
+    public Bill() {
+    }
+
     public Bill(String BillID, Date Date, String PateintName, float TotalMoney) {
         this.BillID = BillID;
         this.Date = Date;
