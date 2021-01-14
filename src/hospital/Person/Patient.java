@@ -4,24 +4,20 @@
  * and open the template in the editor.
  */
 package hospital.Person;
-import hospital.Tranactions.Medical_Insurance;
 import hospital.Person.*;
+import java.io.Serializable;
 
 /**
  *
  * @author islam
  */
-
-enum BloodType{A,B,AB,O}
-
-public class Patient {
+public class Patient implements Serializable{
     
-    private BloodType BT;
+    private String BT;
     private String name;
     private String phone;
     private int age;
     private String gender;
-    private Medical_Insurance insurance;
     private String MedicalCondition;
     
 
@@ -29,21 +25,20 @@ public class Patient {
     }
     
 
-    public Patient(BloodType BT, String name, String phone, int age, String gender, Medical_Insurance insurance, String MedicalCondition) {
+    public Patient(String BT, String name, String phone, int age, String gender, String MedicalCondition) {
         this.BT = BT;
         this.name = name;
         this.phone = phone;
         this.age = age;
         this.gender = gender;
-        this.insurance = insurance;
         this.MedicalCondition = MedicalCondition;
     }
 
-    public BloodType getBT() {
+    public String getBT() {
         return BT;
     }
 
-    public void setBT(BloodType BT) {
+    public void setBT(String BT) {
         this.BT = BT;
     }
 
@@ -79,13 +74,6 @@ public class Patient {
         this.gender = gender;
     }
 
-    public Medical_Insurance getInsurance() {
-        return insurance;
-    }
-
-    public void setInsurance(Medical_Insurance insurance) {
-        this.insurance = insurance;
-    }
 
     public String getMedicalCondition() {
         return MedicalCondition;
@@ -94,10 +82,5 @@ public class Patient {
     public void setMedicalCondition(String MedicalCondition) {
         this.MedicalCondition = MedicalCondition;
     }
-            
-    
-    
-    
-
-    
+               
 }

@@ -5,30 +5,29 @@
  */
 package hospital.Tranactions;
 
-import hospital.Person.Patient;
+import java.io.Serializable;
 
 /**
  *
  * @author mazen
  */
-public class Medical_Insurance {
+public class Medical_Insurance implements Serializable{
     private String Patient_ID;
     private String CompanyName;
     private boolean Status;
     private String Type;
-    private float cost;
+   
     
 
     public Medical_Insurance() {
     }
     
     
-    public Medical_Insurance(String Patient_ID, String CompanyName, boolean Status, String Type, float cost) {
+    public Medical_Insurance(String Patient_ID, String CompanyName, boolean Status, String Type) {
         this.Patient_ID = Patient_ID;
         this.CompanyName = CompanyName;
         this.Status = Status;
         this.Type = Type;
-        this.cost = cost;
     }
 
 
@@ -63,14 +62,4 @@ public class Medical_Insurance {
     public void setType(String Type) {
         this.Type = Type;
     }
-
-    public float getCost() {
-        return cost;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
-  
-    
 }

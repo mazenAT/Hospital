@@ -14,12 +14,12 @@ import javax.swing.UIManager;
  *
  * @author isl27
  */
-public class Expenditures extends javax.swing.JFrame {
+public class Expenditure extends javax.swing.JFrame {
 
     /**
      * Creates new form Expenditures
      */
-    public Expenditures() {
+    public Expenditure() {
         initComponents();
         try {
             // Connecting to the RMI Registry created on the server
@@ -317,13 +317,13 @@ public class Expenditures extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Expenditures.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Expenditure.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Expenditures.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Expenditure.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Expenditures.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Expenditure.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Expenditures.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Expenditure.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
        
         //</editor-fold>
@@ -331,7 +331,7 @@ public class Expenditures extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Expenditures().setVisible(true);
+                new Expenditure().setVisible(true);
             }
         });
 
