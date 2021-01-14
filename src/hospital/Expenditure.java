@@ -23,7 +23,7 @@ public class Expenditure extends javax.swing.JFrame {
         initComponents();
         try {
             // Connecting to the RMI Registry created on the server
-            Registry registry = LocateRegistry.getRegistry(1099);
+            Registry registry = LocateRegistry.getRegistry(1010);
 
             // Search for the stub "calc"
             Budget a = (Budget) registry.lookup("budget");
@@ -229,7 +229,7 @@ public class Expenditure extends javax.swing.JFrame {
 
         try {
             // Connecting to the RMI Registry created on the server
-            Registry registry = LocateRegistry.getRegistry(1099);
+            Registry registry = LocateRegistry.getRegistry(1010);
 
             // Search for the stub "calc"
             Budget a = (Budget) registry.lookup("budget");
@@ -248,7 +248,7 @@ public class Expenditure extends javax.swing.JFrame {
 
         try {
             // Connecting to the RMI Registry created on the server
-            Registry registry = LocateRegistry.getRegistry(1099);
+            Registry registry = LocateRegistry.getRegistry(1010);
 
             // Search for the stub "calc"
             Budget a = (Budget) registry.lookup("budget");
@@ -267,7 +267,7 @@ public class Expenditure extends javax.swing.JFrame {
 
         try {
             // Connecting to the RMI Registry created on the server
-            Registry registry = LocateRegistry.getRegistry(1099);
+            Registry registry = LocateRegistry.getRegistry(1010);
 
             // Search for the stub "calc"
             Budget a = (Budget) registry.lookup("budget");
@@ -286,7 +286,7 @@ public class Expenditure extends javax.swing.JFrame {
 
         try {
             // Connecting to the RMI Registry created on the server
-            Registry registry = LocateRegistry.getRegistry(1099);
+            Registry registry = LocateRegistry.getRegistry(1010);
 
             // Search for the stub "calc"
             Budget a = (Budget) registry.lookup("budget");
