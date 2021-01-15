@@ -139,7 +139,7 @@ public void showPatients(){
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
-        Registry r = LocateRegistry.getRegistry(1010);
+            Registry r = LocateRegistry.getRegistry(1010);
             PersonInterface p = (PersonInterface) r.lookup("per");
             String medicine = jTextField1.getText();
             String phone = jTextField2.getText();
