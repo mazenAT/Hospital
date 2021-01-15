@@ -6,27 +6,39 @@
 package hospital.Tranactions;
 
 import hospital.Person.*;
+import java.util.ArrayList;
 /**
  *
  * @author mazen
  */
 public class Operation {
-    private float cost;
+     private float cost;
     private String time;
+    private String type;
     private String AssignedNurse;
     private String AssignedDoctor;
-    private int wardId;
     private int RoomNumber;
-    private int PatientId;
+    private String PatientName;
+    private ArrayList<Doctor> Observers1 = new ArrayList<Doctor>();
+    private ArrayList<Accountant> Observers2 = new ArrayList<Accountant>();
+    private ArrayList<Nurse> Observers3 = new ArrayList<Nurse>();
 
-    public Operation(float cost, String time, String AssignedNurse, String AssignedDoctor, int wardId, int RoomNumber, int PatientId) {
+    public Operation(float cost, String time, String type, String AssignedNurse, String AssignedDoctor, int RoomNumber, String PatientName) {
         this.cost = cost;
         this.time = time;
+        this.type = type;
         this.AssignedNurse = AssignedNurse;
         this.AssignedDoctor = AssignedDoctor;
-        this.wardId = wardId;
         this.RoomNumber = RoomNumber;
-        this.PatientId = PatientId;
+        this.PatientName = PatientName;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
 
@@ -62,13 +74,6 @@ public class Operation {
         this.AssignedDoctor = AssignedDoctor;
     }
 
-    public int getWardId() {
-        return wardId;
-    }
-
-    public void setWardId(int wardId) {
-        this.wardId = wardId;
-    }
 
     public int getRoomNumber() {
         return RoomNumber;
@@ -78,14 +83,14 @@ public class Operation {
         this.RoomNumber = RoomNumber;
     }
 
-    public int getPatientId() {
-        return PatientId;
+    public String getPatientName() {
+        return PatientName;
     }
 
-    public void setPatientId(int PatientId) {
-        this.PatientId = PatientId;
+    public void setPatientName(String PatientName) {
+        this.PatientName = PatientName;
     }
-    
+
    
     
 }

@@ -16,15 +16,19 @@ import java.rmi.RemoteException;
  */
 public class Accountant extends Person implements Serializable{
     private String jobDegree;
-    private Operation operation;
+    private String OperationTime;
+    private String OperationTimeType ;
+
+    
+
+    public Accountant(String jobDegree, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
+        super(name, email, phone, age, gender, address, role, salary);
+        this.jobDegree = jobDegree;
+    }
 
    
 
-    public Accountant(String jobDegree, Operation operation, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
-        super(name, email, phone, age, gender, address, role, salary);
-        this.jobDegree = jobDegree;
-        this.operation = operation;
-    }
+   
 
     public String getJobDegree() {
         return jobDegree;
@@ -34,22 +38,10 @@ public class Accountant extends Person implements Serializable{
         this.jobDegree = jobDegree;
     }
 
-    public Operation getOperation() {
-        return operation;
-    }
+    
 
-    public void setOperation(Operation operation) {
-        this.operation = operation;
-    }
-
-    @Override
-    public String toString() {
-        return "Accountant{" + "jobDegree=" + jobDegree + ", operation=" + operation + '}';
-    }
 
    
 
-      public void Update(){
-        
-    }
+     
 }

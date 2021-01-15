@@ -5,6 +5,7 @@
  */
 package hospital.Person;
 
+import hospital.Tranactions.Operation;
 import java.io.Serializable;
 
 /**
@@ -20,16 +21,22 @@ public class Nurse extends Person implements Serializable{
     
     private String JobDegree;
     private String Shift;
-    private String Operation;
+    private String OperationTime;
+    private String OperationTimeType ;
     private boolean availability;
 
-    public Nurse(String degreeLvl, String Shift, String Operation, boolean availability, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
+    
+
+    public Nurse(String JobDegree, String Shift, boolean availability, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
         super(name, email, phone, age, gender, address, role, salary);
-        this.JobDegree = degreeLvl;
+        this.JobDegree = JobDegree;
         this.Shift = Shift;
-        this.Operation = Operation;
         this.availability = availability;
     }
+
+    
+
+    
 
     public String getDegreeLvl() {
         return JobDegree;
@@ -47,28 +54,15 @@ public class Nurse extends Person implements Serializable{
         this.Shift = Shift;
     }
 
-    public String getOperation() {
-        return Operation;
-    }
-
-    public void setOperation(String Operation) {
-        this.Operation = Operation;
-    }
-
 
     public void setAvailability(boolean availability) {
         this.availability = availability;
     }
 
-    
-    
-    
-    
-    //******************** Functions **********************
-    
-    public void update()
-    {
-        
+    public boolean isAvailability() {
+        return availability;
     }
+
+   
     
 }
