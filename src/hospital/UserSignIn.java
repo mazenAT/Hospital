@@ -5,6 +5,8 @@
  */
 package hospital;
 
+import hospital.Person.DoctorUI;
+import hospital.Person.NurseUI;
 import hospital.Person.PersonInterface;
 import hospital.Person.Reception;
 import java.rmi.registry.LocateRegistry;
@@ -140,12 +142,12 @@ public class UserSignIn extends javax.swing.JFrame {
                 this.setVisible(false);
             }
             else if(phone.equals(p.GetP(email).getPhone()) && role.equals("Doctor")){
-                Reception au = new Reception();
+                DoctorUI au = new DoctorUI(email);
                 au.setVisible(true);
                 this.setVisible(false);
             }
             else if(phone.equals(p.GetP(email).getPhone()) && role.equals("Nurse")){
-                Reception au = new Reception();
+                NurseUI au = new NurseUI();
                 au.setVisible(true);
                 this.setVisible(false);
             }

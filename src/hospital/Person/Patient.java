@@ -19,7 +19,8 @@ public class Patient implements Serializable{
     private int age;
     private String gender;
     private String MedicalCondition;
-    
+    private String Medicine = "";
+
 
     public Patient() {
     }
@@ -82,5 +83,19 @@ public class Patient implements Serializable{
     public void setMedicalCondition(String MedicalCondition) {
         this.MedicalCondition = MedicalCondition;
     }
-               
+
+    public String getMedicine() {
+        return Medicine;
+    }
+
+    public void setMedicine(String Medicine) {
+        this.Medicine = Medicine;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" + "BT=" + BT + ", name=" + name + ", phone=" + phone + ", age=" + age + ", gender=" + gender + ", MedicalCondition=" + MedicalCondition + ", Medicine=" + Medicine + '}';
+    }
+
+           
 }
