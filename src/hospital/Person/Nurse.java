@@ -16,7 +16,7 @@ import java.io.Serializable;
 
 
 
-public class Nurse extends Person implements Serializable{
+public class Nurse extends Person implements Serializable,Observer{
    
     
     private String JobDegree;
@@ -34,17 +34,31 @@ public class Nurse extends Person implements Serializable{
         this.availability = availability;
     }
 
-    
-
-    
-
-    public String getDegreeLvl() {
+    public String getJobDegree() {
         return JobDegree;
     }
 
-    public void setDegreeLvl(String degreeLvl) {
-        this.JobDegree = degreeLvl;
+    public void setJobDegree(String JobDegree) {
+        this.JobDegree = JobDegree;
     }
+
+    public String getOperationTime() {
+        return OperationTime;
+    }
+
+    public void setOperationTime(String OperationTime) {
+        this.OperationTime = OperationTime;
+    }
+
+    public String getOperationTimeType() {
+        return OperationTimeType;
+    }
+
+    public void setOperationTimeType(String OperationTimeType) {
+        this.OperationTimeType = OperationTimeType;
+    }
+
+    
 
     public String getShift() {
         return Shift;
@@ -63,6 +77,17 @@ public class Nurse extends Person implements Serializable{
         return availability;
     }
 
-   
+    @Override
+    public String toString() {
+        return "Nurse{" + "JobDegree=" + JobDegree + ", Shift=" + Shift + ", OperationTime=" + OperationTime + ", OperationTimeType=" + OperationTimeType + ", availability=" + availability + '}';
+    }
+
     
+    @Override
+  public void update(String time, String type){
+        this.OperationTime = time;
+        this.OperationTimeType = type;
+        
+    }
+
 }

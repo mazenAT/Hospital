@@ -15,8 +15,8 @@ import java.util.ArrayList;
  * @author Ezzat
  */
 
-public class Doctor extends Person implements Serializable{
-    private String Specialziation;
+public class Doctor extends Person implements Serializable,Observer{
+   private String Specialziation;
     private String Department;
     private String shift;
     private ArrayList<Patient> patient;
@@ -33,15 +33,7 @@ public class Doctor extends Person implements Serializable{
         this.patient = patient;
     }
 
-   
 
-    
-
-    
-
-    
-
-   
 
     public String getSpecialziation() {
         return Specialziation;
@@ -75,9 +67,11 @@ public class Doctor extends Person implements Serializable{
         this.patient.add(patient);
     }
 
-    
-
-    
-
-  
+   
+  @Override
+  public void update(String time, String type){
+        this.OperationTime = time;
+        this.OperationTimeType = type;
+        
+    }
 }

@@ -10,11 +10,8 @@ import hospital.Tranactions.Operation;
 import java.io.Serializable;
 import java.rmi.RemoteException;
 
-/**
- *
- * @author Ezzat
- */
-public class Accountant extends Person implements Serializable{
+
+public class Accountant extends Person implements Serializable,Observer{
     private String jobDegree;
     private String OperationTime;
     private String OperationTimeType ;
@@ -38,9 +35,13 @@ public class Accountant extends Person implements Serializable{
         this.jobDegree = jobDegree;
     }
 
-    
-
-
+    @Override
+  public void update(String time, String type){
+        this.OperationTime = time;
+        this.OperationTimeType = type;
+        
+    }
+     
    
 
      

@@ -6,12 +6,13 @@
 package hospital.Tranactions;
 
 import hospital.Person.*;
+import java.io.Serializable;
 import java.util.ArrayList;
 /**
  *
  * @author mazen
  */
-public class Operation {
+public class Operation implements Serializable {
      private float cost;
     private String time;
     private String type;
@@ -20,7 +21,6 @@ public class Operation {
     private int RoomNumber;
     private String PatientName;
     private ArrayList<Doctor> Observers1 = new ArrayList<Doctor>();
-    private ArrayList<Accountant> Observers2 = new ArrayList<Accountant>();
     private ArrayList<Nurse> Observers3 = new ArrayList<Nurse>();
 
     public Operation(float cost, String time, String type, String AssignedNurse, String AssignedDoctor, int RoomNumber, String PatientName) {
@@ -90,7 +90,23 @@ public class Operation {
     public void setPatientName(String PatientName) {
         this.PatientName = PatientName;
     }
+ 
+     public void addObserver1(Doctor d) {
+        this.Observers1.add(d);
+    }
 
+    public void removeObserver1(Doctor d) {
+        this.Observers1.remove(d);
+    }
+    
+
+ public void addObserver3(Nurse n) {
+        this.Observers3.add(n);
+    }
+
+    public void removeObserver3(Nurse n) {
+        this.Observers3.remove(n);
+    }
    
     
 }
