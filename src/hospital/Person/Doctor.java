@@ -15,23 +15,25 @@ import java.util.ArrayList;
  * @author Ezzat
  */
 
-public class Doctor extends Person implements Serializable{
-    private String Specialziation;
+public class Doctor extends Person implements Serializable,Observer{
+   private String Specialziation;
     private String Department;
     private String shift;
     private ArrayList<Patient> patient;
-    private Operation operation;
+    private String OperationTime;
+    private String OperationTimeType ;
 
-    public Doctor(String Specialziation, String Department, String shift, ArrayList<Patient> patient, Operation operation, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
+ 
+
+    public Doctor(String Specialziation, String Department, String shift, ArrayList<Patient> patient, String name, String email, String phone, int age, String gender, String address, String role, float salary) {
         super(name, email, phone, age, gender, address, role, salary);
         this.Specialziation = Specialziation;
         this.Department = Department;
         this.shift = shift;
         this.patient = patient;
-        this.operation = operation;
     }
 
-   
+
 
     public String getSpecialziation() {
         return Specialziation;
@@ -65,38 +67,11 @@ public class Doctor extends Person implements Serializable{
         this.patient.add(patient);
     }
 
-    
-
-    
-
-    public Operation getOperation() {
-        return operation;
-    }
-
-    public void setOperation(Operation operation) {
-        this.operation = operation;
-    }
-
-    @Override
-    public String toString() {
-        return "Doctor{" + "Specialziation=" + Specialziation + ", Department=" + Department + ", shift=" + shift + ", patient=" + patient + ", operation=" + operation + '}';
-    }
-
-    
-    
-    
-    // functions here
-    
-    public boolean CheckOperation(){
-        boolean found = false;
-        if(this.operation != null)
-            found = true;
-        return found;
-    }
-    
-    
-    public void Update(){
+   
+  @Override
+  public void update(String time, String type){
+        this.OperationTime = time;
+        this.OperationTimeType = type;
         
     }
-    
 }

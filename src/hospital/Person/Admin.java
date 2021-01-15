@@ -17,7 +17,7 @@ public class Admin extends Person implements Serializable{
     
 
     private Admin() {
-       
+      
     }
 
     public int getAdminLicence() {

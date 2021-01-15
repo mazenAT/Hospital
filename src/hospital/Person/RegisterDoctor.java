@@ -227,7 +227,7 @@ public class RegisterDoctor extends javax.swing.JFrame {
        
         String shift = (String)jComboBox4.getSelectedItem();
       
-        Person ac = new Doctor(Specialization,Department,shift,null,null,name,email,phone,age,gender,address,role,salary);
+        Person ac = new Doctor(Specialization,Department,shift,null,name,email,phone,age,gender,address,role,salary);
         try{
         Registry registry = LocateRegistry.getRegistry(1010);
         
