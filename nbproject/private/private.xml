@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Supplier.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Ward.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Hospital.java</file>
@@ -49,6 +50,14 @@
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/ReceptionistManager.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/UserSignIn.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterReceptionist.java</file>
+=======
+            <file>file:/C:/Users/isl27/Desktop/New%20DS/Hospital/src/hospital/Person/RegisterUser.java</file>
+            <file>file:/C:/Users/isl27/Desktop/New%20DS/Hospital/src/hospital/Person/RegisterAccountant.java</file>
+            <file>file:/C:/Users/isl27/Desktop/New%20DS/Hospital/src/hospital/AdminSignIn.java</file>
+            <file>file:/C:/Users/isl27/Desktop/New%20DS/Hospital/src/hospital/Home.java</file>
+            <file>file:/C:/Users/isl27/Desktop/New%20DS/Hospital/src/hospital/UserSignIn.java</file>
+            <file>file:/C:/Users/isl27/Desktop/New%20DS/Hospital/src/hospital/Person/AdminUI.java</file>
+>>>>>>> 2737b567caba5003c8e0da826c0720579349c633
         </group>
     </open-files>
 </project-private>
