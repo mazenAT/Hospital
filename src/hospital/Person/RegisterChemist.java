@@ -212,7 +212,7 @@ public class RegisterChemist extends javax.swing.JFrame {
        String jobDegree = (String)jComboBox2.getSelectedItem();
        String shift = (String)jComboBox3.getSelectedItem();
       
-        Person ac = new Chemist(jobDegree,shift,null,name,email,phone,age,gender,address,role,salary);
+        Person ac = new Chemist(jobDegree,shift,name,email,phone,age,gender,address,role,salary);
         try{
         Registry registry = LocateRegistry.getRegistry(1010);
         

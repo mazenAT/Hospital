@@ -14,6 +14,7 @@ public class Reception extends javax.swing.JFrame {
     /**
      * Creates new form Reception
      */
+    
     public Reception() {
         initComponents();
     }

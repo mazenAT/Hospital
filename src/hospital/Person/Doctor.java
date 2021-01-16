@@ -21,7 +21,7 @@ public class Doctor extends Person implements Serializable,Observer{
     private String shift;
     private ArrayList<Patient> patient = new ArrayList<Patient>();
     private String OperationTime;
-    private String OperationTimeType ;
+    private String OperationType ;
 
  
 
@@ -30,7 +30,7 @@ public class Doctor extends Person implements Serializable,Observer{
         this.Specialziation = Specialziation;
         this.Department = Department;
         this.shift = shift;
-       
+        
     }
 
 
@@ -67,11 +67,27 @@ public class Doctor extends Person implements Serializable,Observer{
         this.patient.add(patient);
     }
 
+    public String getOperationTime() {
+        return OperationTime;
+    }
+
+    public void setOperationTime(String OperationTime) {
+        this.OperationTime = OperationTime;
+    }
+
+    public String getOperationType() {
+        return OperationType;
+    }
+
+    public void setOperationType(String OperationType) {
+        this.OperationType = OperationType;
+    }
+
    
   @Override
   public void update(String time, String type){
         this.OperationTime = time;
-        this.OperationTimeType = type;
+        this.OperationType = type;
         
     }
 }

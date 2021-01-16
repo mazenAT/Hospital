@@ -64,7 +64,7 @@ public class Bill {
         return BillDetails;
     }
     
-    public Bill GenerateTestBill(LaboratoryTest L){
+    public Bill GenerateTestBill(Test L){
         
         
         return null;

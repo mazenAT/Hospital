@@ -64,6 +64,9 @@ public interface OperationInterface extends Remote {
 
     public void setId(int id) throws RemoteException;
     
+    public ArrayList<Doctor> getObservers1() throws RemoteException;
+
+    public ArrayList<Nurse> getObservers3() throws RemoteException;
 
 }
 

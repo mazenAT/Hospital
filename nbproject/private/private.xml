@@ -3,30 +3,51 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Supplier.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Ward.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Hospital.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterUser.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Person.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/OrganizeOperation.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Clinic.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Patient.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Tranactions/Operation.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Tranactions/OperationInterface.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/CheckOperations.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterNurse.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Observer.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Chemist.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/PersonInterface.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/SupervisePatient.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Test_Result.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/CheckPatients.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/UpdateUser.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Receptionist.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/WardInterface.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Room.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/AdminUI.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/ModifyUsers.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Doctor.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Spaces/Laboratory.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterDoctor.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/NurseUI.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Tranactions/BillTotal.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterPatient.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Home.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/PatientSignIn.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Reception.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/DeleteUser.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterAccountant.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterChemist.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/DoctorUI.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/AdminSignIn.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Accountant.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Tranactions/BillInterface.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Admin.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/Nurse.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Tranactions/Bill.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/ReceptionistManager.java</file>
+            <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/UserSignIn.java</file>
             <file>file:/C:/Users/hmoo_/Desktop/Hospital/src/hospital/Person/RegisterReceptionist.java</file>
         </group>
     </open-files>

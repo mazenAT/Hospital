@@ -18,19 +18,19 @@ import java.util.logging.Logger;
  *
  * @author hmoo_
  */
-public class CheckOperations extends javax.swing.JFrame {
+public class CheckOperations1 extends javax.swing.JFrame {
 
     /**
      * Creates new form CheckOperations
      */
     String email;
-    public CheckOperations(String email) {
+    public CheckOperations1(String email) {
         initComponents();
        this.email = email;
        showOperation();
     }
 
-   private CheckOperations() {
+   private CheckOperations1() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
    
@@ -38,8 +38,8 @@ public class CheckOperations extends javax.swing.JFrame {
         try {
             Registry r = LocateRegistry.getRegistry(1010);
             PersonInterface p = (PersonInterface) r.lookup("per");
-            jTextField1.setText(p.getDoctorByMail(this.email).getOperationTime());
-            jTextField2.setText(p.getDoctorByMail(this.email).getOperationType());
+            jTextField1.setText(p.getNurseByMail(this.email).getOperationTime());
+            jTextField2.setText(p.getNurseByMail(this.email).getOperationType());
             
         } catch (Exception ex) {
             System.out.print(ex);
@@ -149,20 +149,21 @@ public class CheckOperations extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CheckOperations.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CheckOperations1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CheckOperations.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CheckOperations1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CheckOperations.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CheckOperations1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CheckOperations.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CheckOperations1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CheckOperations().setVisible(true);
+                new CheckOperations1().setVisible(true);
             }
         });
     }

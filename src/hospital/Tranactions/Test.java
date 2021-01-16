@@ -5,15 +5,14 @@
  */
 package hospital.Tranactions;
 
-import hospital.Tranactions.Test;
-import java.rmi.Remote;
-import java.rmi.RemoteException;
-
 /**
  *
- * @author Lenovo
+ * @author hmoo_
  */
-public interface BillInterface extends Remote {
-     public Bill GenerateTestBill(String N) throws RemoteException;
+public interface Test {
     
+    /**
+     *
+     */
+    public void MakeTest();
 }
