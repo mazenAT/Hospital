@@ -5,7 +5,7 @@
  */
 package hospital.Person;
 
-import hospital.Tranactions.LaboratoryTest;
+import hospital.Tranactions.Test;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
@@ -151,8 +151,8 @@ public class Test_Result extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        String name = jTextField1.getText();
-        LaboratoryTest result = new LaboratoryTest();
+       /* String name = jTextField1.getText();
+        
       try{
       Registry R = LocateRegistry.getRegistry(1010);
       ChemistInterface C = (ChemistInterface) R.lookup("chem");
@@ -167,7 +167,7 @@ public class Test_Result extends javax.swing.JFrame {
         catch(Exception e)
         {
             System.err.println(e);
-        }
+        }*/
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

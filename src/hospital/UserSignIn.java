@@ -174,7 +174,7 @@ public class UserSignIn extends javax.swing.JFrame {
                 this.setVisible(false);
             }
             else if(phone.equals(p.GetP(email).getPhone()) && role.equals("Nurse")){
-                NurseUI au = new NurseUI();
+                NurseUI au = new NurseUI(email);
                 au.setVisible(true);
                 this.setVisible(false);
             }

@@ -107,6 +107,14 @@ public class Operation implements Serializable {
     public void removeObserver3(Nurse n) {
         this.Observers3.remove(n);
     }
+
+    public ArrayList<Doctor> getObservers1() {
+        return Observers1;
+    }
+
+    public ArrayList<Nurse> getObservers3() {
+        return Observers3;
+    }
    
     
 }

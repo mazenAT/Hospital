@@ -11,6 +11,7 @@ import hospital.Person.Doctor;
 import hospital.Person.Nurse;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 
 /**
  *
@@ -51,9 +52,6 @@ public interface OperationInterface extends Remote {
 
     public void removeObserver1(Doctor d) throws RemoteException;
     
-    
-    
-    
     public void addObserver3(Nurse n) throws RemoteException;
 
     public void removeObserver3(Nurse n) throws RemoteException;
@@ -65,5 +63,10 @@ public interface OperationInterface extends Remote {
       public int getId() throws RemoteException;
 
     public void setId(int id) throws RemoteException;
+    
+    public ArrayList<Doctor> getObservers1() throws RemoteException;
+
+    public ArrayList<Nurse> getObservers3() throws RemoteException;
+
 }
 
