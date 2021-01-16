@@ -199,7 +199,7 @@ public class RegisterAccountant extends javax.swing.JFrame {
         float salary = Float.parseFloat(jTextField6.getText());
        String jobDegree = (String)jComboBox2.getSelectedItem();
       
-        Person ac = new Accountant(jobDegree,null,name,email,phone,age,gender,address,role,salary);
+        Person ac = new Accountant(jobDegree,name,email,phone,age,gender,address,role,salary);
         try{
         Registry registry = LocateRegistry.getRegistry(1010);
         
