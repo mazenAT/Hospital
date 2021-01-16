@@ -13,11 +13,14 @@ import hospital.Person.PersonInterface;
 import hospital.Person.Reception;
 import hospital.Person.ReceptionistManager;
 import hospital.Person.UpdateUser;
+import hospital.Tranactions.Bill;
+
 import hospital.Tranactions.OperationInterface;
 import java.rmi.RemoteException;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import hospital.Tranactions.BillReadOnly;
 
 /**
  *
@@ -31,10 +34,14 @@ public class Hospital {
     public static void main(String[] args) {
         // TODO code application logic here
 
+       
         try{
         Registry registry = LocateRegistry.getRegistry(1010);
         
         PersonInterface p = (PersonInterface) registry.lookup("per");
+                    // Search for the stub "calc"
+            BillReadOnly b;
+           b = (BillReadOnly)R.lookup("bill");
         
         //Doctor m = new Doctor("Neurologist","Neuro-dept","day",null,"Mohamed","mohamed@mohamed.com","01000214546",30,"Male","helwan","Doctor",12500);
         //p.RegisterP(m);
