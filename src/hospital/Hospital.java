@@ -36,12 +36,12 @@ public class Hospital {
 
        
         try{
-        Registry registry = LocateRegistry.getRegistry(1010);
+        Registry r = LocateRegistry.getRegistry(1010);
         
-        PersonInterface p = (PersonInterface) registry.lookup("per");
+        PersonInterface p = (PersonInterface) r.lookup("per");
                     // Search for the stub "calc"
             BillReadOnly b;
-           b = (BillReadOnly)R.lookup("bill");
+           b = (BillReadOnly)r.lookup("bill");
         
         //Doctor m = new Doctor("Neurologist","Neuro-dept","day",null,"Mohamed","mohamed@mohamed.com","01000214546",30,"Male","helwan","Doctor",12500);
         //p.RegisterP(m);

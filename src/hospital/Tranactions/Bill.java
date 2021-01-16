@@ -62,16 +62,7 @@ public class Bill implements Serializable{
         return "Bill{" + "BillID=" + BillID + ", PateintName=" + PateintName + ", BillDetails=" + BillDetails + ", TotalMoney=" + TotalMoney + '}';
     }
     
-
-    public Bill GenerateTestBill(Test L){
-        
-        
-        return null;
-    }
-    public Bill OperationBill(Operation O){
-        
-        
-        return null;
-    }
+    
+    
 
 }
